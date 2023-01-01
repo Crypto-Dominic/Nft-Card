@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body{
+  background-color: #0d192b;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card-bg{
+  height: 450px;
+  width: 250px;
+  background: #2d3e55;
+  position: absolute;
+  top: 90px;
+  left: 500px;
+  border-radius: 20px;
+}
+
+.card-shadow{
+  height: 420px;
+  width: 270px;
+  background: #14253d;
+  position: absolute;
+  top: 145px;
+  left: 490px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.inner-card{
+  height: 220px;
+  width: 220px;
+  background: #8bacda;
+  z-index: 2;
+  position: absolute;
+  top: 110px;
+  left: 515px;
+  border-radius: 20px;
+}
+
+.inner-card-2{
+  height: 220px;
+  width: 220px;
+  background: transparent;
+  z-index: 2;
+  position: absolute;
+  top: 110px;
+  left: 515px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.inner-card-2 img{
+   position: absolute;
+   top: 90px;
+   left: 85px;
+   opacity: 0;
+   z-index: 4;
+   transition: .5s;
+}
+
+.inner-card-2 img:active{
+   opacity: 100%;
+}
+
+.inner-card-2:active{
+  background: #00fff7;
+  opacity: 50%;
+  transition: .5s;
+}
+
+.inner-card img{
+  height: 220px;
+  width: 220px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.eqb-1{
+  color: #ffff;
+  position: absolute;
+  top: 255px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.eqb-1:active{
+  color: #00fff7;
+  position: absolute;
+  top: 255px;
+  left: 20px;
+}
+
+.eqb-2{
+  color: #afaeae;
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.eth{
+  color: #00fff7;
+  position: absolute;
+  top: 340px;
+  left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.days{
+  color:  #afaeae;
+  position: absolute;
+  top: 340px;
+  left: 155px;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.line{
+  height: 1px;
+  width: 220px;
+  background:  #5a5a5e;
+  position: absolute;
+  left: 515px;
+  top: 470px;
+}
+
+.creator{
+  position: absolute;
+  top: 390px;
+  left: 20px;
+  font-size: 12px;
+  color:  #afaeae;
+}
+
+.creator a{
+  color: #afaeae;
+  text-decoration: none;
+}
+
+.creator a:active{
+  color: #00fff7;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px){
+  *{
+    padding: 0;
+    margin: o;
+    overflow: hidden;
+  }
+
+  body{
+    overflow: hidden;
+  }
+
+  .card-bg{
+    height: 450px;
+    width: 250px;
+    background: #2d3e55;
+    position: absolute;
+    top: 90px;
+    left: 25px;
+    border-radius: 20px;
+  }
+  
+  /*making the card-shadow invisible because it's not needed in mobile*/
+  .card-shadow{
+    height: 420px;
+    width: 270px;
+    background: transparent;
+    position: absolute;
+    top: 145px;
+    left: 25px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  
+  .inner-card{
+    height: 220px;
+    width: 220px;
+    background: #8bacda;
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    border-radius: 20px;
+  }
+  
+  .inner-card-2{
+    height: 220px;
+    width: 220px;
+    background: transparent;
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    left: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .inner-card-2 img{
+     position: absolute;
+     top: 90px;
+     left: 75px;
+     opacity: 0;
+     z-index: 4;
+     transition: .5s;
+  }
+  
+  .inner-card-2 img:active{
+     opacity: 100%;
+  }
+  
+  .inner-card-2:active{
+    background: #00fff7;
+    opacity: 50%;
+    transition: .5s;
+  }
+  
+  .inner-card img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .eqb-1{
+    color: #ffff;
+    position: absolute;
+    top: 255px;
+    left: 20px;
+    cursor: pointer;
+  }
+  
+  .eqb-1:active{
+    color: #00fff7;
+    position: absolute;
+    top: 255px;
+    left: 20px;
+  }
+  
+  .eqb-2{
+    color: #afaeae;
+    position: absolute;
+    top: 290px;
+    left: 20px;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  .eth{
+    color: #00fff7;
+    position: absolute;
+    top: 340px;
+    left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .days{
+    color:  #afaeae;
+    position: absolute;
+    top: 340px;
+    left: 125px;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .line{
+    height: 1px;
+    width: 220px;
+    background:  #5a5a5e;
+    position: absolute;
+    left: 50px;
+    top: 470px;
+  }
+  
+  .creator{
+    position: absolute;
+    top: 390px;
+    left: 20px;
+    font-size: 12px;
+    color:  #afaeae;
+  }
+  
+  .creator a{
+    color: #afaeae;
+    text-decoration: none;
+  }
+  
+  .creator a:active{
+    color: #00fff7;
+    text-decoration: none;
+  }
+  
+
+}
+  
